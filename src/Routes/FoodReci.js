@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const FoodReci = ({history}) => {
     const [foodRecipeList,setFoodRecipeList] = useState([]);
-    const [clicker,setClicker] = useState(0);
+   
 
     useEffect(()=>{
         fetch("http://localhost:5000/api/v1/recipe-list")
